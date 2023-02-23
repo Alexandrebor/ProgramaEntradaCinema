@@ -1,8 +1,8 @@
 import { Pec } from './ProgramaEntradaCinema';
 class Ingresso extends Pec {
   public Filme: string;
-  private Valor: number = 0;
-  private Quantidade: number = 0;
+  private Valor: boolean;
+  private Quantidade: boolean;
 
   setFilme(Filme: string): void {
     if (Filme == comedia) {
@@ -12,7 +12,7 @@ class Ingresso extends Pec {
   getFilme() {
     return this.Filme;
   }
-  setValor(Valor:number):void{
+  setValor(Valor:boolean){
     if(Valor == >=0){
       return false;
     }else{
@@ -22,7 +22,7 @@ class Ingresso extends Pec {
   getValor(){
     return this.Valor;
   }
-  setQuantidade(Quantidade:number):void{
+  setQuantidade(Quantidade:boolean){
     if(Quantidade == >=0){
       return false;
     }else{
